@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 14px;
+    color: #343A40;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+}
+header .hcontent {
+    display: flex;
+    align-items: center;
+    padding: 1,8 rem;
+}
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    width: 40%;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.2rem;
+}
+.logo-cycle{
+   width: auto;
+   height: auto;
+   padding: 1rem;
+}
+
+.logo h1 {
+    padding-top: 0.8rem;
+}
+nav {
+    display: inline-flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0.8 rem;
+}
+
+li a {
+    padding-left: 1.7rem;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #343A40;
+    
+}
+
+nav li:last-child {
+    display: 
+}
+
+/* Header Mobile */
+
+
+/* Section hero & Products */
+
+section {
+    display: block;
+    position: relative;
+    top: 6rem;
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(./images/Cycle-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    padding-left: 4rem;
+
+}
+
+.content-hero {
+    background-color:#048C80 ;
+    width: 20rem;
+    padding: 40px;
+    
+}
+.content-hero p {
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    z-index: 3;
+}
+
+/* Products */
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f3f3f3;
+    padding: 2rem 3%;
+}
+
+.item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 1rem;
+}
+
+.image {
+    flex: 1;
+    margin: 0 auto;
+
+}
+
+.pic {
+    width: 333px;
+    
+}
+
+.content {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+p.name {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 0%;
+}
+
+p.price {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+/* Quienes Somos */
+
+.quienes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+
+}
+
+.container-img img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.texto {
+    margin: 1rem;
+    line-height: 1.5;
+    padding: 2rem;
+}
+.texto p {
+    width: auto;
+    padding: 1rem;
+    font-family: 'Rubik', sans-serif;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Team */
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background-color: #f3f3f3;
+
+}
+
+.person {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+img.player {
+    width: 80%;
+    height: auto;
+    border-radius: 30px;
+    padding: 1.3rem;
+}
+
+p.title {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem; 
+    margin: 0%;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-foot {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+}
+
+.logo-foot img {
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contact-info p {
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0%;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem;
+}
+
+.social-icons img {
+    width: 4rem;
+}
+
+/* responsive design for celphones */
+
+@media only screen and (max-width: 480px) and (min-resolution: 300dpi) {
+    .quienes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+    .texto p {
+        font-size: 0.9rem;
+    }
+}
+
